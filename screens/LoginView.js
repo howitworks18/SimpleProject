@@ -1,19 +1,21 @@
-import { SafeAreaView, View, FlatList, StyleSheet, TextInput , Button} from 'react-native';
+import { SafeAreaView, View, StyleSheet, Button} from 'react-native';
 import React, { Component } from 'react';
 import TextField from '../ui-kit/TextField';
+import ScrollContainer from '../ui-kit/ScrollContainer';
+import {inject, observer} from "mobx-react";
 
-class EventView extends Component {
+class LoginView extends Component {
   render() {
     return (
       <SafeAreaView style={styles.container}>
-
-        <View style={styles.inputWrapper}>
-          <TextField
-          placeholder={ 'Email' }/>
-          <TextField
-          placeholder={ 'Password' }/>
-        </View>
-
+        <ScrollContainer>
+          <View style={styles.inputWrapper}>
+            <TextField
+            placeholder={ 'Email' }/>
+            <TextField
+            placeholder={ 'Password' }/>
+          </View>
+        </ScrollContainer>
         <Button
         title="Login"
         onPress={() => this.props.navigation.push('EventsView')}
@@ -23,16 +25,14 @@ class EventView extends Component {
   }
 }
 
-export default EventView;
+export default inject('UserStore')(observer(LoginView));
+
 
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent:'space-between',
-  },
-  inputWrapper: {
-
   },
   nameWrapper: {
     flexDirection: 'row',

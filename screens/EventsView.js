@@ -5,6 +5,8 @@ import Geolocation from '@react-native-community/geolocation';
 import moment from 'moment';
 import { getDistance } from 'geolib';
 import DummyData from '../DummyData';
+import {inject, observer} from "mobx-react";
+
 
 class EventView extends Component {  
   constructor(props) {
@@ -90,7 +92,8 @@ class EventView extends Component {
 
 
 //make this component available to the app
-export default EventView;
+export default inject('UserStore')(observer(EventView));
+
 
 
 const styles = StyleSheet.create({

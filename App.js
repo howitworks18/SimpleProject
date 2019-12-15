@@ -1,21 +1,16 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import StackNavigator from './StackNavigator'
+import StackNavigator from './StackNavigator';
+import UserStore from './stores/UserStore';
+import { Provider } from 'mobx-react';
 
 class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
+      <Provider UserStore={UserStore}>
         <StackNavigator/>
-      </View>
+      </Provider>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
 
 export default App;

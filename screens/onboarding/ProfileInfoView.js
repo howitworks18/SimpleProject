@@ -1,33 +1,34 @@
-import { SafeAreaView, View, FlatList, StyleSheet, TextInput , Button} from 'react-native';
+import { SafeAreaView, View, StyleSheet, Button} from 'react-native';
 import React, { Component } from 'react';
 import TextField from '../../ui-kit/TextField';
+import ScrollContainer from '../../ui-kit/ScrollContainer';
 
-class EventView extends Component {
+class ProfileInfoView extends Component {
   
   render() {
     return (
       <SafeAreaView style={styles.container}>
-        <View style={styles.inputWrapper}>
-          
-          <View style={ styles.nameWrapper }>
-            <TextField
-            placeholder={ 'First Name' }/>
-            <TextField
-            placeholder={ 'Last Name' }/>
-          </View>
+        <ScrollContainer>
+          <View style={styles.inputWrapper}>
+            <View style={ styles.nameWrapper }>
+              <TextField
+              placeholder={ 'First Name' }/>
+              <TextField
+              placeholder={ 'Last Name' }/>
+            </View>
 
-          <View>
-            <TextField
-            placeholder={ 'Email' }/>
-            <TextField
-            placeholder={ 'Confirm Email' }/>
-            <TextField
-            placeholder={ 'Password' }/>
-            <TextField
-            placeholder={ 'Confirm Password' }/>
+            <View>
+              <TextField
+              placeholder={ 'Email' }/>
+              <TextField
+              placeholder={ 'Confirm Email' }/>
+              <TextField
+              placeholder={ 'Password' }/>
+              <TextField
+              placeholder={ 'Confirm Password' }/>
+            </View>
           </View>
-
-        </View>
+        </ScrollContainer>
 
         <Button
         title="InterestsView"
@@ -38,7 +39,7 @@ class EventView extends Component {
   }
 }
 
-export default EventView;
+export default ProfileInfoView;
 
 
 const styles = StyleSheet.create({
