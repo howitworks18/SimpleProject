@@ -1,19 +1,26 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Button } from 'react-native';
+import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, Button } from 'react-native';
+import {inject, observer} from "mobx-react";
 
 class InterestsView extends Component {
+    handleInterest=(data)=>{
+      this.props.UserStore.interest.push(data)
+      console.log(this.props.UserStore.interest)
+    }
 
     render() {
       const interests = ['cool', 'stuff', 'you', 'are', 'interested in', 'like', 'concerts', 'and', 'free', 'booze', 'meet', 'people', 'too!']
         return (
-            <View style={styles.container}>
-
+            <SafeAreaView style={styles.container}>
               <View style={styles.interesetWrapper}>
                 <Text>Tell us what you enjoy doing</Text>
                   <View style={styles.buttonContainer}>
-                    {interests.map((data )=> {
+                    {interests.map((data, index)=> {
                         return(
-                          <TouchableOpacity style={styles.button} key={data.index}>
+                          <TouchableOpacity 
+                            style={styles.button} 
+                            key={index}
+                            onPress={()=>this.handleInterest(data)}>
                             <Text>{data}</Text>
                           </TouchableOpacity>
                         )
@@ -22,11 +29,11 @@ class InterestsView extends Component {
                   </View>
               </View>
 
-                <Button
-                  title="EventsView"
-                  onPress={() => this.props.navigation.navigate('EventsView')}
-                  />
-            </View>
+              <Button
+                title="EventsView"
+                onPress={() => this.props.navigation.navigate('EventsView')}
+                />
+            </SafeAreaView>
         );
     }
 }
@@ -35,8 +42,7 @@ class InterestsView extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'space-around',
-        alignItems: 'center',
+        justifyContent: 'space-between',
     },
     interesetWrapper: {
       alignItems: 'center',
@@ -57,5 +63,4 @@ const styles = StyleSheet.create({
     }
 });
 
-
-export default InterestsView;
+export default inject('UserStore')(observer(InterestsView));
