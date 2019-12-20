@@ -6,7 +6,7 @@ import { getDistance } from 'geolib';
 import React, { Component } from 'react';
 
 // create a component
-class Event extends Component {
+class EventHeaderCard extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -75,11 +75,10 @@ const styles = StyleSheet.create({
   },
   image: { 
     justifyContent: 'flex-end', 
-    width: '100%', 
+    width: Dimensions.get('window').width - 100,
     height: 200 
   },
   item: {
-    paddingHorizontal: 10,
     marginVertical: 10,
   },
   header: {
@@ -103,4 +102,4 @@ const styles = StyleSheet.create({
 });
 
 //make this component available to the app
-export default Event;
+export default EventHeaderCard;

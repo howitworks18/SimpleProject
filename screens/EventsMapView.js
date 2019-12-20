@@ -1,6 +1,6 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import MapView from 'react-native-maps';
 import Geolocation from '@react-native-community/geolocation';
 import DummyData from '../DummyData';

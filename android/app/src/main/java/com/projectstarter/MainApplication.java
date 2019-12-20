@@ -1,4 +1,4 @@
-package com.ivi;
+package com.projectstarter;
 
 import android.app.Application;
 import android.content.Context;

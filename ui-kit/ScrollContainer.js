@@ -16,8 +16,7 @@ const ScrollContainer = props => {
 // define your styles
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        padding: 20
+        flex: 1
     },
 });
 

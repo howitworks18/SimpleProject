@@ -1,8 +1,6 @@
-//import liraries
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-// create a component
 class CalendarEventView extends Component {
     render() {
         const { data } = this.props.route.params;
@@ -14,7 +12,6 @@ class CalendarEventView extends Component {
     }
 }
 
-// define your styles
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -24,5 +21,4 @@ const styles = StyleSheet.create({
     },
 });
 
-//make this component available to the app
 export default CalendarEventView;

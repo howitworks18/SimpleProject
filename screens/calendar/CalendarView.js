@@ -16,19 +16,9 @@ export default class CalendarView extends Component {
   }
 
   render() {
-    const sampleData = {
-      '2019-11-25':[{title:'1 Cool Event', info:'some data about the event'}],
-      '2019-11-26':[{title:'2 Cool Event', info:'some data about the event'}],
-      '2019-11-27':[{title:'3 Cool Event', info:'some data about the event'}],
-      '2019-11-28':[{title:'4 Cool Event', info:'some data about the event'}],
-      '2019-12-01':[{title:'5 Cool Event', info:'some data about the event'}],
-      '2019-12-02':[{title:'6 Cool Event', info:'some data about the event'}],
-      '2019-12-03':[{title:'7 Cool Event', info:'some data about the event'}],
-      '2019-12-29':[],
-    }
     return (
       <Agenda
-        items={sampleData}
+        items={this.state.items}
         loadItemsForMonth={this.loadItems.bind(this)}
         selected={new Date()}
         renderItem={this.renderItem.bind(this)}
@@ -39,7 +29,6 @@ export default class CalendarView extends Component {
   }
 
   loadItems(day) {
-    console.log(day)
     setTimeout(() => {
       for (let i = -15; i < 85; i++) {
         const time = day.timestamp + i * 24 * 60 * 60 * 1000;

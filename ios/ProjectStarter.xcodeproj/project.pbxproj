@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* IVITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* IVITests.m */; };
+		00E356F31AD99517003FC87E /* ProjectStarterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ProjectStarterTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -15,11 +15,11 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* IVITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* IVITests.m */; };
-		501170AB9FC35E7F38EA0675 /* libPods-IVI-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AB19072CE3B254784B515A /* libPods-IVI-tvOSTests.a */; };
-		553F1AF7C6D70E4DDE13012F /* libPods-IVI-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F71AC51F1CD5F18623EE4A /* libPods-IVI-tvOS.a */; };
-		9E2DEC7E551FABF390726BE8 /* libPods-IVI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1771972AFAB259345F330E /* libPods-IVI.a */; };
-		C58125A842ECFFF6F8923500 /* libPods-IVITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF3A413147F5A5C0889F403 /* libPods-IVITests.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* ProjectStarterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ProjectStarterTests.m */; };
+		501170AB9FC35E7F38EA0675 /* libPods-ProjectStarter-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AB19072CE3B254784B515A /* libPods-ProjectStarter-tvOSTests.a */; };
+		553F1AF7C6D70E4DDE13012F /* libPods-ProjectStarter-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F71AC51F1CD5F18623EE4A /* libPods-ProjectStarter-tvOS.a */; };
+		9E2DEC7E551FABF390726BE8 /* libPods-ProjectStarter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1771972AFAB259345F330E /* libPods-ProjectStarter.a */; };
+		C58125A842ECFFF6F8923500 /* libPods-ProjectStarterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF3A413147F5A5C0889F403 /* libPods-ProjectStarterTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,45 +28,45 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = IVI;
+			remoteInfo = ProjectStarter;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "IVI-tvOS";
+			remoteInfo = "ProjectStarter-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* IVITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IVITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* ProjectStarterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectStarterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* IVITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IVITests.m; sourceTree = "<group>"; };
-		04B496482DAEE3C852D8F14A /* Pods-IVI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVI.release.xcconfig"; path = "Target Support Files/Pods-IVI/Pods-IVI.release.xcconfig"; sourceTree = "<group>"; };
-		07C0A406D4D1085CBAF04E9E /* Pods-IVI-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVI-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-IVI-tvOSTests/Pods-IVI-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* IVI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IVI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = IVI/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = IVI/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* ProjectStarterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectStarterTests.m; sourceTree = "<group>"; };
+		04B496482DAEE3C852D8F14A /* Pods-ProjectStarter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectStarter.release.xcconfig"; path = "Target Support Files/Pods-ProjectStarter/Pods-ProjectStarter.release.xcconfig"; sourceTree = "<group>"; };
+		07C0A406D4D1085CBAF04E9E /* Pods-ProjectStarter-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectStarter-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-ProjectStarter-tvOSTests/Pods-ProjectStarter-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* ProjectStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ProjectStarter/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ProjectStarter/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = IVI/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = IVI/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = IVI/main.m; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* IVI-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IVI-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* IVI-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IVI-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		52AB19072CE3B254784B515A /* libPods-IVI-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IVI-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		62E01C0A1FBB3B09ECEBEA15 /* Pods-IVI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVI.debug.xcconfig"; path = "Target Support Files/Pods-IVI/Pods-IVI.debug.xcconfig"; sourceTree = "<group>"; };
-		66F71AC51F1CD5F18623EE4A /* libPods-IVI-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IVI-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6938641AB01329998073EDB6 /* Pods-IVI-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVI-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-IVI-tvOSTests/Pods-IVI-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7A1771972AFAB259345F330E /* libPods-IVI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IVI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BA014D8ECEC73B9EBFEA972 /* Pods-IVITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVITests.release.xcconfig"; path = "Target Support Files/Pods-IVITests/Pods-IVITests.release.xcconfig"; sourceTree = "<group>"; };
-		B83CC8BF271077F894F1D30F /* Pods-IVITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVITests.debug.xcconfig"; path = "Target Support Files/Pods-IVITests/Pods-IVITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C18BEE0E63164CADDF889E1D /* Pods-IVI-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVI-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-IVI-tvOS/Pods-IVI-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ProjectStarter/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ProjectStarter/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ProjectStarter/main.m; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* ProjectStarter-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProjectStarter-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* ProjectStarter-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ProjectStarter-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52AB19072CE3B254784B515A /* libPods-ProjectStarter-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProjectStarter-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62E01C0A1FBB3B09ECEBEA15 /* Pods-ProjectStarter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectStarter.debug.xcconfig"; path = "Target Support Files/Pods-ProjectStarter/Pods-ProjectStarter.debug.xcconfig"; sourceTree = "<group>"; };
+		66F71AC51F1CD5F18623EE4A /* libPods-ProjectStarter-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProjectStarter-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6938641AB01329998073EDB6 /* Pods-ProjectStarter-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectStarter-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ProjectStarter-tvOSTests/Pods-ProjectStarter-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A1771972AFAB259345F330E /* libPods-ProjectStarter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProjectStarter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BA014D8ECEC73B9EBFEA972 /* Pods-ProjectStarterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectStarterTests.release.xcconfig"; path = "Target Support Files/Pods-ProjectStarterTests/Pods-ProjectStarterTests.release.xcconfig"; sourceTree = "<group>"; };
+		B83CC8BF271077F894F1D30F /* Pods-ProjectStarterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectStarterTests.debug.xcconfig"; path = "Target Support Files/Pods-ProjectStarterTests/Pods-ProjectStarterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C18BEE0E63164CADDF889E1D /* Pods-ProjectStarter-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectStarter-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ProjectStarter-tvOS/Pods-ProjectStarter-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		EDF3A413147F5A5C0889F403 /* libPods-IVITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IVITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F52B44C819DF78664A020981 /* Pods-IVI-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVI-tvOS.release.xcconfig"; path = "Target Support Files/Pods-IVI-tvOS/Pods-IVI-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		EDF3A413147F5A5C0889F403 /* libPods-ProjectStarterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProjectStarterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52B44C819DF78664A020981 /* Pods-ProjectStarter-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectStarter-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ProjectStarter-tvOS/Pods-ProjectStarter-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C58125A842ECFFF6F8923500 /* libPods-IVITests.a in Frameworks */,
+				C58125A842ECFFF6F8923500 /* libPods-ProjectStarterTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E2DEC7E551FABF390726BE8 /* libPods-IVI.a in Frameworks */,
+				9E2DEC7E551FABF390726BE8 /* libPods-ProjectStarter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				553F1AF7C6D70E4DDE13012F /* libPods-IVI-tvOS.a in Frameworks */,
+				553F1AF7C6D70E4DDE13012F /* libPods-ProjectStarter-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,20 +98,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				501170AB9FC35E7F38EA0675 /* libPods-IVI-tvOSTests.a in Frameworks */,
+				501170AB9FC35E7F38EA0675 /* libPods-ProjectStarter-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* IVITests */ = {
+		00E356EF1AD99517003FC87E /* ProjectStarterTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* IVITests.m */,
+				00E356F21AD99517003FC87E /* ProjectStarterTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = IVITests;
+			path = ProjectStarterTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -122,7 +122,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* IVI */ = {
+		13B07FAE1A68108700A75B9A /* ProjectStarter */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -133,7 +133,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = IVI;
+			name = ProjectStarter;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -141,10 +141,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				7A1771972AFAB259345F330E /* libPods-IVI.a */,
-				66F71AC51F1CD5F18623EE4A /* libPods-IVI-tvOS.a */,
-				52AB19072CE3B254784B515A /* libPods-IVI-tvOSTests.a */,
-				EDF3A413147F5A5C0889F403 /* libPods-IVITests.a */,
+				7A1771972AFAB259345F330E /* libPods-ProjectStarter.a */,
+				66F71AC51F1CD5F18623EE4A /* libPods-ProjectStarter-tvOS.a */,
+				52AB19072CE3B254784B515A /* libPods-ProjectStarter-tvOSTests.a */,
+				EDF3A413147F5A5C0889F403 /* libPods-ProjectStarterTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,9 +159,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* IVI */,
+				13B07FAE1A68108700A75B9A /* ProjectStarter */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* IVITests */,
+				00E356EF1AD99517003FC87E /* ProjectStarterTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				98E0DBCF08B2794D5712F8A3 /* Pods */,
@@ -174,10 +174,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* IVI.app */,
-				00E356EE1AD99517003FC87E /* IVITests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* IVI-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* IVI-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* ProjectStarter.app */,
+				00E356EE1AD99517003FC87E /* ProjectStarterTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* ProjectStarter-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* ProjectStarter-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,14 +185,14 @@
 		98E0DBCF08B2794D5712F8A3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				62E01C0A1FBB3B09ECEBEA15 /* Pods-IVI.debug.xcconfig */,
-				04B496482DAEE3C852D8F14A /* Pods-IVI.release.xcconfig */,
-				C18BEE0E63164CADDF889E1D /* Pods-IVI-tvOS.debug.xcconfig */,
-				F52B44C819DF78664A020981 /* Pods-IVI-tvOS.release.xcconfig */,
-				6938641AB01329998073EDB6 /* Pods-IVI-tvOSTests.debug.xcconfig */,
-				07C0A406D4D1085CBAF04E9E /* Pods-IVI-tvOSTests.release.xcconfig */,
-				B83CC8BF271077F894F1D30F /* Pods-IVITests.debug.xcconfig */,
-				9BA014D8ECEC73B9EBFEA972 /* Pods-IVITests.release.xcconfig */,
+				62E01C0A1FBB3B09ECEBEA15 /* Pods-ProjectStarter.debug.xcconfig */,
+				04B496482DAEE3C852D8F14A /* Pods-ProjectStarter.release.xcconfig */,
+				C18BEE0E63164CADDF889E1D /* Pods-ProjectStarter-tvOS.debug.xcconfig */,
+				F52B44C819DF78664A020981 /* Pods-ProjectStarter-tvOS.release.xcconfig */,
+				6938641AB01329998073EDB6 /* Pods-ProjectStarter-tvOSTests.debug.xcconfig */,
+				07C0A406D4D1085CBAF04E9E /* Pods-ProjectStarter-tvOSTests.release.xcconfig */,
+				B83CC8BF271077F894F1D30F /* Pods-ProjectStarterTests.debug.xcconfig */,
+				9BA014D8ECEC73B9EBFEA972 /* Pods-ProjectStarterTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -201,9 +201,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* IVITests */ = {
+		00E356ED1AD99517003FC87E /* ProjectStarterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "IVITests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ProjectStarterTests" */;
 			buildPhases = (
 				31CBAE73DCF29473714511B0 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -215,14 +215,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = IVITests;
-			productName = IVITests;
-			productReference = 00E356EE1AD99517003FC87E /* IVITests.xctest */;
+			name = ProjectStarterTests;
+			productName = ProjectStarterTests;
+			productReference = 00E356EE1AD99517003FC87E /* ProjectStarterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* IVI */ = {
+		13B07F861A680F5B00A75B9A /* ProjectStarter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "IVI" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ProjectStarter" */;
 			buildPhases = (
 				36231278DDEE5E9B770C7094 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -235,14 +235,14 @@
 			);
 			dependencies = (
 			);
-			name = IVI;
-			productName = IVI;
-			productReference = 13B07F961A680F5B00A75B9A /* IVI.app */;
+			name = ProjectStarter;
+			productName = ProjectStarter;
+			productReference = 13B07F961A680F5B00A75B9A /* ProjectStarter.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* IVI-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* ProjectStarter-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "IVI-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ProjectStarter-tvOS" */;
 			buildPhases = (
 				22B0DD2109A2A2839F6274DD /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -255,14 +255,14 @@
 			);
 			dependencies = (
 			);
-			name = "IVI-tvOS";
-			productName = "IVI-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* IVI-tvOS.app */;
+			name = "ProjectStarter-tvOS";
+			productName = "ProjectStarter-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* ProjectStarter-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* IVI-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* ProjectStarter-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "IVI-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ProjectStarter-tvOSTests" */;
 			buildPhases = (
 				04A328EE29E91B6071D1065A /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -274,9 +274,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "IVI-tvOSTests";
-			productName = "IVI-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* IVI-tvOSTests.xctest */;
+			name = "ProjectStarter-tvOSTests";
+			productName = "ProjectStarter-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* ProjectStarter-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -303,7 +303,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "IVI" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ProjectStarter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -316,10 +316,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* IVI */,
-				00E356ED1AD99517003FC87E /* IVITests */,
-				2D02E47A1E0B4A5D006451C7 /* IVI-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* IVI-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* ProjectStarter */,
+				00E356ED1AD99517003FC87E /* ProjectStarterTests */,
+				2D02E47A1E0B4A5D006451C7 /* ProjectStarter-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* ProjectStarter-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -388,7 +388,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IVI-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ProjectStarter-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -410,7 +410,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IVI-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ProjectStarter-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -446,7 +446,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IVITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ProjectStarterTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -468,7 +468,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IVI-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ProjectStarter-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -520,7 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* IVITests.m in Sources */,
+				00E356F31AD99517003FC87E /* ProjectStarterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +546,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* IVITests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* ProjectStarterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,12 +555,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* IVI */;
+			target = 13B07F861A680F5B00A75B9A /* ProjectStarter */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* IVI-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* ProjectStarter-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -572,7 +572,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = IVI;
+			path = ProjectStarter;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -580,14 +580,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B83CC8BF271077F894F1D30F /* Pods-IVITests.debug.xcconfig */;
+			baseConfigurationReference = B83CC8BF271077F894F1D30F /* Pods-ProjectStarterTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = IVITests/Info.plist;
+				INFOPLIST_FILE = ProjectStarterTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -597,17 +597,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IVI.app/IVI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectStarter.app/ProjectStarter";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BA014D8ECEC73B9EBFEA972 /* Pods-IVITests.release.xcconfig */;
+			baseConfigurationReference = 9BA014D8ECEC73B9EBFEA972 /* Pods-ProjectStarterTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = IVITests/Info.plist;
+				INFOPLIST_FILE = ProjectStarterTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -617,18 +617,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IVI.app/IVI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectStarter.app/ProjectStarter";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62E01C0A1FBB3B09ECEBEA15 /* Pods-IVI.debug.xcconfig */;
+			baseConfigurationReference = 62E01C0A1FBB3B09ECEBEA15 /* Pods-ProjectStarter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				INFOPLIST_FILE = IVI/Info.plist;
+				INFOPLIST_FILE = ProjectStarter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -636,18 +636,18 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = IVI;
+				PRODUCT_NAME = ProjectStarter;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04B496482DAEE3C852D8F14A /* Pods-IVI.release.xcconfig */;
+			baseConfigurationReference = 04B496482DAEE3C852D8F14A /* Pods-ProjectStarter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = IVI/Info.plist;
+				INFOPLIST_FILE = ProjectStarter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -655,14 +655,14 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = IVI;
+				PRODUCT_NAME = ProjectStarter;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C18BEE0E63164CADDF889E1D /* Pods-IVI-tvOS.debug.xcconfig */;
+			baseConfigurationReference = C18BEE0E63164CADDF889E1D /* Pods-ProjectStarter-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -673,14 +673,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "IVI-tvOS/Info.plist";
+				INFOPLIST_FILE = "ProjectStarter-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.IVI-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ProjectStarter-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -690,7 +690,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F52B44C819DF78664A020981 /* Pods-IVI-tvOS.release.xcconfig */;
+			baseConfigurationReference = F52B44C819DF78664A020981 /* Pods-ProjectStarter-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -701,14 +701,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "IVI-tvOS/Info.plist";
+				INFOPLIST_FILE = "ProjectStarter-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.IVI-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ProjectStarter-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -718,7 +718,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6938641AB01329998073EDB6 /* Pods-IVI-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 6938641AB01329998073EDB6 /* Pods-ProjectStarter-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -728,24 +728,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "IVI-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "ProjectStarter-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.IVI-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ProjectStarter-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IVI-tvOS.app/IVI-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectStarter-tvOS.app/ProjectStarter-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07C0A406D4D1085CBAF04E9E /* Pods-IVI-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 07C0A406D4D1085CBAF04E9E /* Pods-ProjectStarter-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -755,17 +755,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "IVI-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "ProjectStarter-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.IVI-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ProjectStarter-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IVI-tvOS.app/IVI-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectStarter-tvOS.app/ProjectStarter-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -872,7 +872,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "IVITests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ProjectStarterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -881,7 +881,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "IVI" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ProjectStarter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -890,7 +890,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "IVI-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ProjectStarter-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -899,7 +899,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "IVI-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ProjectStarter-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -908,7 +908,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "IVI" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ProjectStarter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

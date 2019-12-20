@@ -19,5 +19,7 @@ export default SettingsView;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
   },
 });

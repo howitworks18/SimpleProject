@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'IVI' do
-  # Pods for IVI
+target 'ProjectStarter' do
+  # Pods for ProjectStarter
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -37,7 +37,7 @@ target 'IVI' do
   pod 'ReactNativeNavigation', :podspec => '../node_modules/react-native-navigation/ReactNativeNavigation.podspec'
   pod 'react-native-maps', :path => '../node_modules/react-native-maps'
 
-  target 'IVITests' do
+  target 'ProjectStarterTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -45,10 +45,10 @@ target 'IVI' do
   use_native_modules!
 end
 
-target 'IVI-tvOS' do
-  # Pods for IVI-tvOS
+target 'ProjectStarter-tvOS' do
+  # Pods for ProjectStarter-tvOS
 
-  target 'IVI-tvOSTests' do
+  target 'ProjectStarter-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
