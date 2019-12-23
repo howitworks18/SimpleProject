@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 class CalendarEventView extends Component {
     render() {
-        const { data } = this.props.route.params;
+        //const data = this.props.navigation.getParam('event', null)
         return (
             <View style={styles.container}>
-                <Text>{data.title}</Text>
+                <TouchableOpacity onPress={() => this.props.navigation.goBack()}><Text>Back</Text></TouchableOpacity>
+                <Text>Event details</Text>
             </View>
         );
     }

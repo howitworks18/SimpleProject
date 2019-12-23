@@ -3,8 +3,10 @@ import {
   Text,
   View,
   TouchableOpacity,
-  StyleSheet
+  StyleSheet,
+  SafeAreaView
 } from 'react-native';
+import ItemButton from '../../ui-kit/ItemButton';
 import {Agenda} from 'react-native-calendars';
 
 export default class CalendarView extends Component {
@@ -17,14 +19,24 @@ export default class CalendarView extends Component {
 
   render() {
     return (
-      <Agenda
-        items={this.state.items}
-        loadItemsForMonth={this.loadItems.bind(this)}
-        selected={new Date()}
-        renderItem={this.renderItem.bind(this)}
-        renderEmptyDate={this.renderEmptyDate.bind(this)}
-        rowHasChanged={this.rowHasChanged.bind(this)}
-      />
+      <SafeAreaView style={{ flex: 1 }}>
+      
+        <Agenda
+          items={this.state.items}
+          loadItemsForMonth={this.loadItems.bind(this)}
+          selected={new Date()}
+          renderItem={this.renderItem.bind(this)}
+          renderEmptyDate={this.renderEmptyDate.bind(this)}
+          rowHasChanged={this.rowHasChanged.bind(this)}
+        />
+        <View style={styles.buttonContainer}>
+          <ItemButton onPress={() => this.props.navigation.push('EventsView')} icon={'settingsIcon'} />
+          <ItemButton onPress={() => this.props.navigation.push('CalendarView')} icon={'calIcon'} />
+          <ItemButton onPress={() => this.props.navigation.push('EventsMapView')} icon={'mapIcon'} />
+          <ItemButton onPress={() => this.props.navigation.push('SettingsView')} icon={'settingsIcon'} />
+        </View>
+      
+      </SafeAreaView>
     );
   }
 
@@ -51,14 +63,14 @@ export default class CalendarView extends Component {
         items: newItems
       });
     }, 1000);
-    // console.log(`Load Items for ${day.year}-${day.month}`);
   }
 
   renderItem(item) {
     return (
       <TouchableOpacity 
         style={[styles.item, {height: item.height}]}
-        onPress={ () => this.props.navigation.navigate('CalendarEventView', { data: item }) }>
+        onPress={ () => this.props.navigation.navigate('CalendarEventView') }
+        >
         <View><Text>{item.title}</Text></View>
       </TouchableOpacity>
     );
@@ -93,5 +105,11 @@ const styles = StyleSheet.create({
     height: 15,
     flex:1,
     paddingTop: 30
-  }
+  },
+  buttonContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    paddingVertical: 10,
+    paddingHorizontal: '20%'
+  },
 });

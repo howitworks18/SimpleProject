@@ -4,6 +4,7 @@ import Geolocation from '@react-native-community/geolocation';
 import moment from 'moment';
 import { getDistance } from 'geolib';
 import React, { Component } from 'react';
+import { Transition } from 'react-navigation-fluid-transitions';
 
 // create a component
 class Event extends Component {
@@ -47,22 +48,25 @@ class Event extends Component {
   }
     render() {
       let { item } = this.props;
+
         return (
             <View style={styles.item}>
-                <TouchableWithoutFeedback onPress={() => this.props.navigation.navigate('EventDetailsView', { event: item })}>
-                    <ImageBackground 
-                      source={{ uri: item.image }} 
-                      imageStyle={{ borderRadius: 10 }}
-                      style={styles.image}>
-                        <View style={{ backgroundColor: 'rgba(153, 153, 153, .3)', padding: 10, borderBottomLeftRadius: 8, borderBottomRightRadius: 8 }}>
-                          <Text style={styles.title}>{item.title}</Text>
-                          <View style={styles.header}>
-                            <Text style={styles.subtitle}>{moment(item.date).format("MMMM DD")}</Text>
-                            <Text style={styles.subtitle}>{this.distanceCalc(item.latitude, item.longitude)} mi</Text>
+                <Transition shared={item.id}>
+                  <TouchableWithoutFeedback onPress={() => this.props.navigation.navigate('EventDetailsView', { event: item })}>
+                      <ImageBackground 
+                        source={{ uri: item.image }} 
+                        imageStyle={{ borderRadius: 10 }}
+                        style={styles.image}>
+                          <View style={{ backgroundColor: 'rgba(153, 153, 153, .3)', padding: 10, borderBottomLeftRadius: 8, borderBottomRightRadius: 8 }}>
+                            <Text style={styles.title}>{item.title}</Text>
+                            <View style={styles.header}>
+                              <Text style={styles.subtitle}>{moment(item.date).format("MMMM DD")}</Text>
+                              <Text style={styles.subtitle}>{this.distanceCalc(item.latitude, item.longitude)} mi</Text>
+                            </View>
                           </View>
-                        </View>
-                    </ImageBackground>
-                </TouchableWithoutFeedback>
+                      </ImageBackground>
+                  </TouchableWithoutFeedback>
+                </Transition>
             </View>
         );
     }

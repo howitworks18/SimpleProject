@@ -1,7 +1,9 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, SafeAreaView } from 'react-native';
 import MapView from 'react-native-maps';
+import ItemButton from '../ui-kit/ItemButton';
+import NavigationBar from '../ui-kit/NavigationBar';
 import Geolocation from '@react-native-community/geolocation';
 import DummyData from '../DummyData';
 
@@ -26,7 +28,7 @@ class EventMapView extends Component {
   
   render() {
     return (
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
         <MapView
           style={styles.map}
           region={{
@@ -51,7 +53,8 @@ class EventMapView extends Component {
             })
           }
         </MapView>
-      </View>
+        <NavigationBar navigation={this.props.navigation} />
+      </SafeAreaView>
     );
   }
 }
@@ -73,6 +76,14 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     bottom: 0,
+  },
+  buttonContainer: {
+    flexDirection: 'row',
+    backgroundColor: 'white',
+    justifyContent: 'space-around',
+    paddingVertical: 10,
+    width:'100%',
+    paddingHorizontal: '20%'
   },
 });
 

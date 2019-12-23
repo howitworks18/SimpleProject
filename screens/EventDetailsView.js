@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import MapView from 'react-native-maps';
-import ScrollContainer from '../ui-kit/ScrollContainer';
+import { Transition } from 'react-navigation-fluid-transitions';
 import Geolocation from '@react-native-community/geolocation';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, Dimensions } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 class EventDetailsView extends Component {
   constructor(props) {
@@ -21,32 +22,18 @@ class EventDetailsView extends Component {
     )
   }
     render() {
-        const { event } = this.props.route.params;
+      const event = this.props.navigation.getParam('event', null);
         return (
             <View style={styles.container}>
               <View style={styles.header}>
+            <TouchableOpacity onPress={() => this.props.navigation.goBack()}><Text>Back</Text></TouchableOpacity>
                 <Text style={styles.title}>{event.title}</Text>
+              <Transition shared={event.id}>
                 <Image source={{uri: event.image}}
-                  style={{width: '100%', borderRadius: 8, height: 300}} />
+                  style={styles.paper} />
+              </Transition>
                 <Text style={styles.description}>{event.eventDetails}</Text>
               </View>
-              <MapView
-                style={styles.map}
-                region={{
-                  latitude: event.latitude,
-                  longitude: event.longitude,
-                  latitudeDelta: 0.09,
-                  longitudeDelta: 0.035
-                }}
-              >
-                <MapView.Marker
-                  coordinate={{
-                    latitude: event.latitude,
-                    longitude: event.longitude
-                  }}
-                  title={event.title}>
-                </MapView.Marker>
-              </MapView>
             </View>
         );
     }
@@ -55,6 +42,7 @@ class EventDetailsView extends Component {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
+      paddingTop: 60,
       justifyContent:'space-between',
     },
     item: {
@@ -78,6 +66,12 @@ const styles = StyleSheet.create({
     description: {
       paddingTop: 10
     },
+  paper: {
+    height: 200,
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+  },
 });
 
 //make this component available to the app

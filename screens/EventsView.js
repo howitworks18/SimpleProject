@@ -3,18 +3,12 @@ import React, { Component } from 'react';
 import ItemButton from '../ui-kit/ItemButton';
 import DummyData from '../DummyData';
 import Event from '../ui-kit/Event';
+import NavigationBar from '../ui-kit/NavigationBar';
 import EventsHeader from '../ui-kit/EventsHeader';
-import {inject, observer} from "mobx-react";
+import { inject, observer } from "mobx-react";
 
 class EventView extends Component {  
-  constructor(props) {
-    super(props);
-    this.state = {
-      latitude: 0,
-      longitude: 0
-    };
-  }
-
+  
   itemInViewAnalytics = (data) => {
     //future analytics here
     console.log(data.changed[0].item)
@@ -28,18 +22,9 @@ class EventView extends Component {
           ListHeaderComponent={({ item }) => <EventsHeader navigation={ this.props.navigation } item={ item }/>}
           renderItem={({ item }) => <Event navigation={ this.props.navigation } item={ item }/>}
           keyExtractor={item => item.id}
-          onViewableItemsChanged={(item)=>this.itemInViewAnalytics(item)}
-          viewabilityConfig={{
-            itemVisiblePercentThreshold: 90
-          }}
+          
         />
-        
-          <View style={styles.buttonContainer}>
-            <ItemButton onPress={() => this.props.navigation.push('CalendarView')} icon={'calIcon'}/>
-            <ItemButton onPress={() => this.props.navigation.push('EventsMapView')} icon={'mapIcon'}/>
-            <ItemButton onPress={() => this.props.navigation.push('SettingsView')} icon={'settingsIcon'}/>
-          </View>
-        
+        <NavigationBar navigation={this.props.navigation}/>
     </SafeAreaView>
     );
   }
@@ -49,12 +34,15 @@ class EventView extends Component {
 //make this component available to the app
 export default inject('UserStore')(observer(EventView));
 
-
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#FFFFFF',
+  },
+  paper: {
+    height:50,
+    width:50,
+    backgroundColor:'blue'
   },
   buttonContainer: {
     flexDirection:'row',

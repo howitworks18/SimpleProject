@@ -31,11 +31,13 @@
     "react-native-safe-area-context": "^0.6.1",
     "react-native-screens": "^1.0.0-alpha.23",
     "react-native-selectmultiple-button": "^0.1.105",
+    "react-native-shared-element": "^0.5.3",
     "react-native-snap-carousel": "^3.8.4",
     "react-native-svg": "^9.13.6",
     "react-native-svg-uri": "^1.2.3",
     "react-navigation": "^4.0.10",
     "react-navigation-fluid-transitions": "^0.3.2",
+    "react-navigation-shared-element": "^0.5.0",
     "react-navigation-stack": "^1.10.3"
   },
   "devDependencies": {

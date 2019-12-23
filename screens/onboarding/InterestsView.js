@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, Button } from 'react-native';
-import {inject, observer} from "mobx-react";
 
 class InterestsView extends Component {
     handleInterest=(data)=>{
-      this.props.UserStore.interest.push(data)
-      console.log(this.props.UserStore.interest)
+      console.log('')
     }
 
     render() {
@@ -63,4 +61,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default inject('UserStore')(observer(InterestsView));
+export default InterestsView;
