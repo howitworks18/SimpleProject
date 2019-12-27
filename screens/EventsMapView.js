@@ -1,65 +1,91 @@
-//import liraries
 import React, { Component } from 'react';
-import { View, StyleSheet, SafeAreaView } from 'react-native';
+import { View, StyleSheet, SafeAreaView, Image, Dimensions } from 'react-native';
 import MapView from 'react-native-maps';
-import ItemButton from '../ui-kit/ItemButton';
 import NavigationBar from '../ui-kit/NavigationBar';
 import Geolocation from '@react-native-community/geolocation';
 import DummyData from '../DummyData';
+import EventHeaderCard from '../ui-kit/EventHeaderCard';
+import Carousel from 'react-native-snap-carousel';
 
-// create a component
 class EventMapView extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      latitude:0,
-      longitude:0
+      coordinates: DummyData,
+      latitude: 0,
+      longitude: 0
     };
   }
   componentDidMount() {
-    Geolocation.getCurrentPosition((data)=>
+    Geolocation.getCurrentPosition((data) =>
       this.setState({
-        latitude:data.coords.latitude,
-        longitude:data.coords.longitude
+        latitude: data.coords.latitude,
+        longitude: data.coords.longitude
       })
     )
-   }
+  }
 
-  
+  renderCarousel = ({ item }) => {
+    return (
+      <EventHeaderCard navigation={this.props.navigation} item={item} />
+    )
+  }
+
+  onItemChange = (index) => {
+    let location = this.state.coordinates[index]
+    this._map.animateToRegion({
+      latitude: location.latitude,
+      longitude: location.longitude,
+      latitudeDelta: 0.09,
+      longitudeDelta: 0.035
+    })
+  }
+
   render() {
     return (
       <SafeAreaView style={styles.container}>
         <MapView
           style={styles.map}
+          ref={map => this._map = map}
           region={{
-          latitude: this.state.latitude,
-          longitude:  this.state.longitude,
-          latitudeDelta: 0.09,
-          longitudeDelta: 0.035
+            latitude: this.state.latitude,
+            longitude: this.state.longitude,
+            latitudeDelta: 0.09,
+            longitudeDelta: 0.035
           }}
         >
           {
             DummyData.map(data => {
-              return(
-               <View key={data.id}>
-                 <MapView.Marker
-                  coordinate={{
-                  latitude: data.latitude,
-                  longitude: data.longitude }}
-                  title={data.title}>
+              return (
+                <View key={data.id}>
+                  <MapView.Marker
+                    coordinate={{
+                      latitude: data.latitude,
+                      longitude: data.longitude
+                    }}
+                    title={data.title}>
                   </MapView.Marker>
-               </View> 
+                </View>
               )
             })
           }
         </MapView>
-        <NavigationBar navigation={this.props.navigation} />
+        <View style={styles.carouselWrapper}>
+          <Carousel
+            ref={(c) => { this._carousel = c; }}
+            data={this.state.coordinates}
+            renderItem={this.renderCarousel}
+            onSnapToItem={(index) => this.onItemChange(index)}
+            sliderWidth={Dimensions.get('window').width}
+            itemWidth={Dimensions.get('window').width * .75}
+          />
+        </View>
+        {/* <NavigationBar navigation={this.props.navigation} /> */}
       </SafeAreaView>
     );
   }
 }
 
-// define your styles
 const styles = StyleSheet.create({
   container: {
     position: 'absolute',
@@ -82,9 +108,14 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     justifyContent: 'space-around',
     paddingVertical: 10,
-    width:'100%',
+    width: '100%',
     paddingHorizontal: '20%'
   },
+  carouselWrapper: {
+    position: 'absolute',
+
+    bottom: 40,
+  }
 });
 
 //make this component available to the app
